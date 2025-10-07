@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Resume</title>
+    <style>
+        /* Shared Styles for Navigation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Active (Current Page) Highlight - Orange/Brown */
+        .navbar a.active {
+            background-color: #cc5500;
+            color: white;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 40px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Resume Specific Styles (mula sa iyong resume template) */
+        .container {
+            width: 800px; 
+            margin: 40px auto; 
+            background-color: white;
+            padding: 40px;
+            border: 2px solid #cc5500; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h1 {
+            margin: 0;
+            font-size: 28px; 
+            color: #333;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .profile-pic {
+            width: 100px; 
+            height: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+            border: 1px solid #ccc; 
+        }
+
+        h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #cc5500; 
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #cc5500; 
+        }
+        
+        .personal-info-grid {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .personal-info-item {
+            margin-bottom: 3px;
+        }
+        .personal-info-item strong {
+            display: inline-block;
+            width: 150px; 
+            color: #444;
+        }
+
+        .section-item {
+            margin-bottom: 15px;
+        }
+
+        .year-range {
+            font-weight: bold;
+            display: block;
+            font-size: 14px;
+            color: #575757;
+        }
+
+        .degree {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .school {
+            margin-left: 20px;
+            font-style: italic;
+            display: block;
+        }
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        ul ul { 
+            list-style-type: circle;
+            padding-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content"> 
+        <div class="container" style="margin: 0 auto; border: none; box-shadow: none;">
+            <div class="header">
+                <div class="contact-info">
+                    <h1>Harold Gobris Tolosa</h1>
+                    <p>Brgy. Magsaysay, Bulan Sorsogon | 09776328117 | haroldtolosa60@gmail.com</p>
+                </div>
+                <img src="resume.jpg" alt="Profile Picture" class="profile-pic"> 
+            </div>
+
+            <h2>OBJECTIVE</h2>
+            <p>To acquire valuable knowledge and skills to contribute ideas that I have learned from school in an actual job experience in return. I offer my services and determination to be an asset to your company through ethical contribution of my acquired skills.</p>
+
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="personal-info-grid">
+                <div class="personal-info-item"><strong>Date of Birth:</strong> <span>June 20, 2004</span></div>
+                <div class="personal-info-item"><strong>Place of Birth:</strong> <span>Magsaysay, Bulan, Sorsogon</span></div>
+                <div class="personal-info-item"><strong>Civil Status:</strong> <span>Single</span></div>
+                <div class="personal-info-item"><strong>Nationality:</strong> <span>Filipino</span></div>
+                <div class="personal-info-item"><strong>Religion:</strong> <span>Catholic</span></div>
+                <div class="personal-info-item"><strong>Sex:</strong> <span>Male</span></div>
+            </div>
+
+            <h2>EDUCATION</h2>
+            <div class="section-item">
+                <span class="year-range">2022 – 2026 (Expected)</span>
+                <span class="school">Sorsogon State University - Bulan Campus</span>
+                <div class="degree">Bachelor of Science in Information System</div>
+            </div>
+            <div class="section-item">
+                <span class="year-range">2020 – 2022</span>
+                <span class="school">Louella Gotladera Alcoba National High School (Senior High)</span>
+                <div class="degree">General Academic Strand</div>
+            </div>
+            <div class="section-item">
+                <span class="year-range">2016 – 2020</span>
+                <span class="school">Louella Gotladera Alcoba National High School (Junior High)</span>
+                <p style="margin-left: 20px; font-size: 14px;">San Isidro Bulan, Sorsogon</p>
+            </div>
+            <div class="section-item">
+                <span class="year-range">2010 – 2016</span>
+                <span class="school">M.G.De Castro Elementary School</span>
+                <p style="margin-left: 20px; font-size: 14px;">Magsaysay, Bulan, Sorsogon</p>
+            </div>
+
+            <h2>SKILLS</h2>
+            <ul>
+                <li>Soft Skills:
+                    <ul>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem-solving</li>
+                        <li>Adaptability and time management</li>
+                    </ul>
+                </li> 
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+</html>
